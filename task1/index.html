@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Responsive Image Gallery</h1>
+
+    <!-- Filter Buttons -->
+    <div class="buttons">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('nature')">Nature</button>
+        <button onclick="filterImages('animals')">Animals</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <!-- Nature Images -->
+
+        <div class="image nature">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Nature Image">
+        </div>
+
+        <div class="image nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1200&auto=format&fit=crop" alt="Nature Image">
+        </div>
+
+        <div class="image nature">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Nature Image">
+        </div>
+
+        <!-- Animal Images -->
+
+        <div class="image animals">
+            <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop" alt="Animal Image">
+        </div>
+
+        <div class="image animals">
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1200&auto=format&fit=crop" alt="Animal Image">
+        </div>
+
+        <div class="image animals">
+            <img src="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?q=80&w=1200&auto=format&fit=crop" alt="Animal Image">
+        </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+
+        <span class="close">&times;</span>
+
+        <button class="prev">&#10094;</button>
+
+        <img class="lightbox-img" src="" alt="">
+
+        <button class="next">&#10095;</button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
